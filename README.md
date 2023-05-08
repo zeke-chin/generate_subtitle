@@ -3,6 +3,7 @@
 🤖️ 一种利用[whisper](https://github.com/openai/whisper)和[m2m100](https://github.com/facebookresearch/fairseq/tree/main/examples/m2m_100)分别作为 语言转文字(ASR)和机器翻译的模型，来使用FastAPI构建的服务
 
 💡 主要代码参考[Ziyue Li](https://github.com/feynlee)的https://github.com/openai/whisper/discussions/504
+一个很棒的[jupyter](https://colab.research.google.com/github/feynlee/whisper2subtitles/blob/main/Whisper2subtitles.ipynb)
 
 ✅ 为了让项目能够最快的跑通，默认模型使用的是whisper_tiny和m2m100_418M
 
