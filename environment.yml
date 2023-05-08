@@ -1,0 +1,26 @@
+name: py10
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ # Anocanda清华镜像
+  - defaults
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+dependencies:
+  - python=3.10
+  - ipython
+  - pip
+  - ipykernel
+  - pip:
+      - cython
+      - fastapi
+      - uvicorn
+      - jinja2
+      - gunicorn
+      - ipywidgets
+      - transformers
+      - openai-whisper
+      - setuptools-rust
+      - python-magic
+      - python-multipart
+      - sentencepiece
+      - aiofiles
+      - -i https://mirror.baidu.com/pypi/simple
+prefix: /opt/conda/envs/py10

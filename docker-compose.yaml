@@ -1,0 +1,21 @@
+version: '2'
+services:
+  generate_subtitle:
+    hostname: generate_subtitle
+    container_name: generate_subtitle
+    restart: always
+    image: generate_subtitle
+    privileged: true
+    ipc: host
+    tty: true
+    working_dir: /workspace
+    ports:
+      - '1180:8080'
+      - '1122:22'
+    volumes:
+      - .:/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
